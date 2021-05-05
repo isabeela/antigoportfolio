@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		
+		<!-- bootstrap - link cdn -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	
+	<style >
+		h3 {
+		 font-family: 'Neucha', cursive;
+		 color: #e6005c;
+		}
+	</style>
+        
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+                $('.btn_carrega_conteudo').click(function(){
+                    var carrega_url = this.id;
+                    carrega_url = carrega_url + "_conteudo.html";
+                    
+                    $.ajax({
+                        url: carrega_url, success: function(data){
+                            $('#div_conteudo').html(data);
+                        },
+
+                    });
+
+                });
+
+            });
+
+        </script>
+
+	</head>
+	<body>
+
+				<!-- Static navbar -->
+	    <nav class="navbar navbar-default navbar-static-top">
+	      <div class="container">
+	        <div class="navbar-header">
+	        	<h3>CONHECIMENTOS & CURSOS </h3>
+	        </div>
+	      </div>
+	    </nav>
+
+	    <div class="container">
+
+	    	<div class="row">
+	    		<div class="col-md-4 center"></div>
+	    		<div class="col-md-1 center">
+	    		<div class="idioma">
+	    		<a href="#"> <img src="https://png.icons8.com/wired/70/000000/chat.png" class=" btn_carrega_conteudo" id="pagina_1" onmouseover="this.src='https://png.icons8.com/dusk/70/000000/chat.png'" onmouseout="this.src='https://png.icons8.com/wired/70/000000/chat.png'"> </a> <br>  <p align="center"> Idiomas </p>
+	    		</div>
+	    		</div>
+	    		<div class="col-md-1 center">
+	    			<div class="code">
+	    		<a href="#"><img src="https://png.icons8.com/wired/70/000000/code-file.png" class="btn_carrega_conteudo" id="pagina_2" onmouseover="this.src='https://png.icons8.com/dusk/70/000000/code-file.png'" onmouseout="this.src='https://png.icons8.com/wired/70/000000/code-file.png'"></<br></a> <p align="center"> Tecnologia </p>
+	    		</div>
+	    		</div>
+	    		<div class="col-md-1 center">
+	    		<a href="#"><img src="https://png.icons8.com/wired/70/000000/design.png" onmouseover="this.src='https://png.icons8.com/dusk/70/000000/design.png'" onmouseout="this.src='https://png.icons8.com/wired/70/000000/design.png'" class=" btn_carrega_conteudo" id="pagina_3"><br></a> <p align="center"> Design
+	    		</div>
+	    		<div class="col-md-1 center">
+	    			<div class="code">
+	    		<a href="#"><img src="https://png.icons8.com/wired/70/000000/borrow-book.png" class="btn_carrega_conteudo" id="pagina_4" onmouseover="this.src='https://png.icons8.com/dusk/70/000000/borrow-book.png'" onmouseout="this.src='https://png.icons8.com/wired/70/000000/borrow-book.png'"></<br></a> <p align="center"> Cursos</p>
+	    		</div>
+	    		</div>
+	    		
+	    		<div class="col-md-2 center"></div>
+	    	</div>
+	    	
+	    	<br />
+	    	<div class="row">
+		    	<div class="col-md-1"></div>
+
+		    	<div class="col-md-10" id="div_conteudo">
+                    <img id="loader" src='loader.gif' style="display: none">
+                </div>
+		    		
+				<div class="col-md-1"></div>
+			</div>
+
+		</div>	
+	</body>
+</html>

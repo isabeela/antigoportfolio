@@ -1,0 +1,156 @@
+
+html, body, .capa {
+	height: 100%;
+}
+
+body {
+	background: url(images/sagafundo.jpg);
+	background-attachment: fixed;
+	font-family: Helvetica,Arial,sans-serif;
+	overflow-x: hidden;
+}
+
+nav.navbar-principal {
+	padding: 20px 0px;
+	background: white;
+	border-color: #e6005c;
+
+}
+
+
+
+.navbar-brand {
+	padding: 5px 15px;
+}
+
+.divisor{ 
+	width: 1px;
+	height: 16px;
+	background: black;
+	margin: 16px 10px;
+
+}
+
+
+.navbar-default .navbar-principal>li>a, footer .nav a  {
+	color: white;
+
+}
+
+
+.navbar-default .navbar-principal>li>a:hover , footer .nav a:hover {
+	color: #e78d05;
+	background: none;
+
+}
+
+
+
+
+/* ============ Imagem da capa  =========== */
+
+.capa {
+	display: table;
+	width: 100%;
+
+}
+
+.texto-capa {
+	text-align: center;
+	padding-left: 50px;
+	color: #3e107c;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+/* Serviço */
+
+#servicos {
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.albuns {
+	padding: 10px 0px 10px 0px;
+}
+
+
+
+/* Recursos */
+
+#recursos {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: #f5f5f0;
+}
+
+padding-left: 80px;
+}
+
+
+
+#local {
+	background: white;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+
+#quem {
+	padding-top: 0px;
+}
+
+
+ /* Rodapé */
+
+ footer {
+ 	background: #000;
+ 	padding: 50px 0px  20px 0px;
+ 	position: relative;
+ }
+
+.item-rede-social{
+	float: right;
+}
+
+h1 {
+	font-size: 100px;
+	font-weight: 900px;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+	
+}
+
+h2 {
+	color: #e6005c;
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+	
+	
+}
+
+h3 {
+	color: #e6005c;
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+#rodape h4{
+	color: #919496;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+#servicos h2,  #servicos h3 {
+	color: #e6005c;
+}
+
+#recursos h3 {
+	color: #e6005c;
+}
